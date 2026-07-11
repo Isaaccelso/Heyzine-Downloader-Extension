@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Heyzine PDF Downloader"
+  },
+  "extensionDescription": {
+    "message": "Shows a button on Heyzine pages to download the original catalog PDF."
+  },
+  "buttonReady": {
+    "message": "Download PDF"
+  },
+  "buttonLoading": {
+    "message": "Downloading..."
+  },
+  "buttonError": {
+    "message": "Download failed"
+  },
+  "buttonTitle": {
+    "message": "Download the original catalog PDF"
+  }
+}
