@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heyzine PDF Downloader | Extração Simples e Rápida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
+        .hero-gradient { background: radial-gradient(circle at top right, #e0e7ff, transparent 70%); }
+        .blob { filter: blur(80px); opacity: 0.6; }
+    </style>
+</head>
+<body class="text-slate-900 overflow-x-hidden">
+
+    <nav class="flex justify-between items-center py-8 px-10 md:px-24">
+        <div class="text-2xl font-black tracking-tighter text-indigo-600">HEYZINE PDF DOWNLOADER</div>
+        <a href="https://chromewebstore.google.com/detail/heyzine-pdf-downloader/oimaddodnjfhncflkcgoihppolemgphe" 
+           class="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-600 transition-all">Instalar Extensão</a>
+    </nav>
+
+    <header class="relative px-10 md:px-24 pt-20 pb-32 hero-gradient">
+        <div class="max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-black leading-none mb-8">Baixe seus PDFs <span class="text-indigo-600">sem esforço.</span></h1>
+            <p class="text-xl md:text-2xl text-slate-600 font-light max-w-2xl mb-12">Baixe catalogos da Heyzine diretamente para o seu computador com um único clique. Rápido, leve e intuitivo.</p>
+            <div class="flex gap-4">
+                <a href="https://chromewebstore.google.com/detail/heyzine-pdf-downloader/oimaddodnjfhncflkcgoihppolemgphe" 
+                   class="bg-indigo-600 text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl shadow-indigo-200 hover:scale-105 transition-transform">Baixar na Chrome Store</a>
+            </div>
+        </div>
+        <!-- Decorative blob -->
+        <div class="blob absolute top-20 right-20 w-96 h-96 bg-indigo-200 rounded-full z-[-1]"></div>
+    </header>
+
+    <section class="px-10 md:px-24 py-24">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-10">
+                <h2 class="text-5xl font-black tracking-tighter">Por que usar?</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-indigo-600 pl-6">
+                        <h3 class="text-2xl font-bold">Totalmente Gratuito</h3>
+                        <p class="text-slate-600">Sem taxas ocultas ou planos premium. Acesso total aos seus documentos.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-600 pl-6">
+                        <h3 class="text-2xl font-bold">Alta Qualidade</h3>
+                        <p class="text-slate-600">Baixe os PDFs mantendo a integridade original das páginas.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-600 pl-6">
+                        <h3 class="text-2xl font-bold">Privacidade total</h3>
+                        <p class="text-slate-600">Nenhum dado é enviado para servidores externos. O processo acontece no seu navegador.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center items-center">
+                <div class="relative w-96 h-96 flex justify-center items-center animate-bounce-slow">
+                    <div class="absolute transform -rotate-12 -translate-x-16 translate-y-8 opacity-80">
+                        <svg class="w-48 h-60 text-indigo-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM8 18v-2h8v2H8zm0-4v-2h8v2H8zm0-4V8h5l3 3v1H8z"/></svg>
+                    </div>
+                    <div class="absolute transform rotate-0 z-10">
+                        <svg class="w-48 h-60 text-indigo-600 drop-shadow-xl" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM8 18v-2h8v2H8zm0-4v-2h8v2H8zm0-4V8h5l3 3v1H8z"/></svg>
+                    </div>
+                    <div class="absolute transform rotate-12 translate-x-16 translate-y-8 opacity-80">
+                        <svg class="w-48 h-60 text-indigo-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM8 18v-2h8v2H8zm0-4v-2h8v2H8zm0-4V8h5l3 3v1H8z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px) rotate(-5deg); }
+                50% { transform: translateY(-20px) rotate(5deg); }
+            }
+            .animate-bounce-slow {
+                animation: float 4s ease-in-out infinite;
+            }
+        </style>
+    </section>
+
+    <footer class="px-10 md:px-24 py-16 border-t border-slate-200 text-center text-slate-500">
+        <p>&copy; 2026 Heyzine PDF Downloader - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                console.log("Usuário interessado na extensão.");
+            });
+        });
+    </script>
+</body>
+</html>
